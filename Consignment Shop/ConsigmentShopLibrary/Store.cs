@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace ConsigmentShopLibrary
 {
-    class Store
+    public class Store
     {
         public string Name { get; set; }
         public List<Vendor> Vendors { get; set; }
-        // vendor is of list of type
-
         public List<Item> Items { get; set; }
+
+        public Store()
+        {
+            Vendors = new List<Vendor>();
+            Items = new List<Item>();
+        }
     }
 }

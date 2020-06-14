@@ -1,0 +1,13 @@
+C:\Users\girish\myProjects\C-Projects\Consignment Shop\ConsignmentShopUI\obj\Debug\ConsignmentShopUI.csprojAssemblyReference.cache
+C:\Users\girish\myProjects\C-Projects\Consignment Shop\ConsignmentShopUI\obj\Debug\ConsignmentShopUI.ConsignmentShop.resources
+C:\Users\girish\myProjects\C-Projects\Consignment Shop\ConsignmentShopUI\obj\Debug\ConsignmentShopUI.Properties.Resources.resources
+C:\Users\girish\myProjects\C-Projects\Consignment Shop\ConsignmentShopUI\obj\Debug\ConsignmentShopUI.csproj.GenerateResource.cache
+C:\Users\girish\myProjects\C-Projects\Consignment Shop\ConsignmentShopUI\obj\Debug\ConsignmentShopUI.csproj.CoreCompileInputs.cache
+C:\Users\girish\myProjects\C-Projects\Consignment Shop\ConsignmentShopUI\bin\Debug\ConsignmentShopUI.exe.config
+C:\Users\girish\myProjects\C-Projects\Consignment Shop\ConsignmentShopUI\bin\Debug\ConsignmentShopUI.exe
+C:\Users\girish\myProjects\C-Projects\Consignment Shop\ConsignmentShopUI\bin\Debug\ConsignmentShopUI.pdb
+C:\Users\girish\myProjects\C-Projects\Consignment Shop\ConsignmentShopUI\bin\Debug\ConsigmentShopLibrary.dll
+C:\Users\girish\myProjects\C-Projects\Consignment Shop\ConsignmentShopUI\bin\Debug\ConsigmentShopLibrary.pdb
+C:\Users\girish\myProjects\C-Projects\Consignment Shop\ConsignmentShopUI\obj\Debug\ConsignmentShopUI.csproj.CopyComplete
+C:\Users\girish\myProjects\C-Projects\Consignment Shop\ConsignmentShopUI\obj\Debug\ConsignmentShopUI.exe
+C:\Users\girish\myProjects\C-Projects\Consignment Shop\ConsignmentShopUI\obj\Debug\ConsignmentShopUI.pdb

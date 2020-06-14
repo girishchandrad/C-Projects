@@ -1,0 +1,5 @@
+C:\Users\girish\myProjects\C-Projects\Consignment Shop\ConsigmentShopLibrary\bin\Debug\ConsigmentShopLibrary.dll
+C:\Users\girish\myProjects\C-Projects\Consignment Shop\ConsigmentShopLibrary\bin\Debug\ConsigmentShopLibrary.pdb
+C:\Users\girish\myProjects\C-Projects\Consignment Shop\ConsigmentShopLibrary\obj\Debug\ConsigmentShopLibrary.csproj.CoreCompileInputs.cache
+C:\Users\girish\myProjects\C-Projects\Consignment Shop\ConsigmentShopLibrary\obj\Debug\ConsigmentShopLibrary.dll
+C:\Users\girish\myProjects\C-Projects\Consignment Shop\ConsigmentShopLibrary\obj\Debug\ConsigmentShopLibrary.pdb

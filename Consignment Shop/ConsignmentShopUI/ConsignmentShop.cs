@@ -16,18 +16,37 @@ namespace ConsignmentShopUI
     public partial class ConsignmentShop : Form
     {
         private Store store = new Store();
+        private List<Item> shoppingCartData = new List<Item>();
+
+
         BindingSource itemsBinding = new BindingSource();
+        BindingSource cartBinding = new BindingSource();
+        BindingSource vendorBinding = new BindingSource();
         // add referece of consignment shop UI with ConsignmentShopLibrary, Library should not know about UI
+        private decimal storeProfit = 0;
         public ConsignmentShop()
         {
             InitializeComponent();
             SetupData();
 
-            itemsBinding.DataSource = store.Items;
+            itemsBinding.DataSource = store.Items.Where(x=>x.Sold == false).ToList();
             itemsListBoxLabel.DataSource = itemsBinding;
 
             itemsListBoxLabel.DisplayMember = "Display";
             itemsListBoxLabel.ValueMember = "Display";
+
+            cartBinding.DataSource = shoppingCartData;
+            ShoppingListBox.DataSource = cartBinding;
+
+            ShoppingListBox.DisplayMember = "Display";
+            ShoppingListBox.ValueMember = "Display";
+
+            vendorBinding.DataSource = store.Vendors;
+            vendorListBox.DataSource = vendorBinding;
+
+            vendorListBox.DisplayMember = "Display";
+            vendorListBox.ValueMember = "Display";
+
         }
 
         private void SetupData()
@@ -71,6 +90,42 @@ namespace ConsignmentShopUI
 
             store.Name = "Seconds are better.";
 
+        }
+
+        //never delete this code before deleting solution explorer code in solution explorer UI
+        private void PurchaseItem_Click(object sender, EventArgs e)
+        {
+            //Figure out what is selected from items list
+            //copy that item to shopping cart
+            // do we remove item from items list - no
+            Item selectedItem = (Item)itemsListBoxLabel.SelectedItem;
+            shoppingCartData.Add(selectedItem);
+            cartBinding.ResetBindings(false);
+
+
+        }
+
+        private void MakePurchase_Click(object sender, EventArgs e)
+        {
+            //Mark each item as sold
+            //clear the cart
+
+            foreach (Item item in shoppingCartData)
+            {
+                item.Sold = true;
+
+                item.Owner.paymentDue += item.Price * (decimal)item.Owner.Commission;
+                storeProfit += (1 - (decimal)item.Owner.Commission) * item.Price;
+
+            }
+            shoppingCartData.Clear();
+            storeProfitValue.Text = string.Format("${0}",storeProfit);
+
+            cartBinding.ResetBindings(false);
+            itemsBinding.DataSource = store.Items.Where(x => x.Sold == false).ToList();
+            itemsBinding.ResetBindings(false);
+            vendorBinding.ResetBindings(false);
+            
         }
     }
 }
